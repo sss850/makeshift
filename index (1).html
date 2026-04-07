@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>シフト作成</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+      <div class="container">
+        <h1>シフト自動作成</h1>
+        <input id="name" placeholder="名前">
+
+        
+      <div class="days">
+        <label><input type="checkbox" value="月">月</label>
+        <label><input type="checkbox" value="火">火</label>
+        <label><input type="checkbox" value="水">水</label>
+        <label><input type="checkbox" value="木">木</label>
+        <label><input type="checkbox" value="金">金</label>
+        <label><input type="checkbox" value="土">土</label>
+        <label><input type="checkbox" value="日">日</label>
+      </div>
+
+        <input id="max" type="number" placeholder="希望日数">
+        <br>
+        <button onclick="addPerson()">追加</button>
+        <br>
+        <button onclick="makeShift()">シフト作成</button>
+
+        <div id="result"></div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+</html>
